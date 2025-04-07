@@ -1,0 +1,71 @@
+:root {
+    --default: #ffffff00;
+    --hovernav: #ff0dff;
+}
+
+
+main {
+    width: auto;
+    height: 100vh;
+    background-image: url("../img/sukuna.jpg");
+    background-color: rgb(23, 32, 37);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+
+
+.nav-bar {
+    border: 2px solid var(--default) ;
+    grid-area: nav-bar;
+}
+
+.menu {
+    border: 2px solid var(--default) ;
+    grid-area: menu;
+}
+
+.main {
+    border: 2px solid var(--default) ;
+    grid-area: main;
+    position: relative;
+}
+
+.right-side {
+    border: 2px solid var(--default) ;
+    grid-area: right-side;
+}
+
+.footer {
+    border: 2px solid var(--default) ;
+    grid-area: footer;
+}
+
+
+
+.main-container {
+    width: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        'nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar'
+        'menu main main main main right-side'
+        'menu main main main main right-side'
+        'menu main main main main right-side'
+        'menu main main main main right-side'
+        'footer footer footer footer footer footer'
+    ;
+ }
+ 
+
+ .greating {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 3em;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    
+ }
